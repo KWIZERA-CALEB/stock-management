@@ -22,3 +22,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #00796B; 
 }
+
+
+/* html {
+    @apply bg-white text-black transition-colors duration-300 ease-in-out;
+  }
+  
+html.dark {
+    @apply bg-[#000] text-white transition-colors duration-300 ease-in-out;
+} */

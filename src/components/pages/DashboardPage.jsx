@@ -6,7 +6,7 @@ const DashboardPage = () => {
   return (
     <>
         <FullPageLoader />
-        <div className='w-full bg-white'>
+        <div className='w-full bg-white dark:bg-primary'>
             <TopNavigation />
             <div className='p-[20px] w-full'>
                 <DashboardOverview />
