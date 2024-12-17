@@ -41,16 +41,16 @@ const DashboardOverview = () => {
     <>
         <div className='w-full'>
             <div>
-                <h4 className='font-roboto font-bold text-[16px] cursor-pointer'>Dashboard</h4>
-                <p className='font-roboto text-[14px] cursor-pointer'>Overview of your Stock</p>
+                <h4 className='font-roboto font-bold text-[16px] dark:text-white cursor-pointer'>Dashboard</h4>
+                <p className='font-roboto text-[14px] cursor-pointer dark:text-white'>Overview of your Stock</p>
             </div>
             <div className='w-full mt-[20px] border-t-[2px] border-solid pt-[10px]'>
                 <div className='grid grid-cols-4 gap-[4px]'>
                     {/* card */}
                     <div className='border-solid border-[1px] rounded-[15px] cursor-pointer flex flex-row justify-between p-[20px]'>
                         <div>
-                            <p className='font-roboto text-[14px] cursor-pointer'>Total Products</p>
-                            <h4 className='font-roboto font-bold text-[14px] cursor-pointer'>230</h4>
+                            <p className='font-roboto text-[14px] dark:text-white cursor-pointer'>Total Products</p>
+                            <h4 className='font-roboto font-bold dark:text-white text-[14px] cursor-pointer'>230</h4>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000" width="20" height="20">
@@ -62,8 +62,8 @@ const DashboardOverview = () => {
                     {/* card */}
                     <div className='border-solid border-[1px] rounded-[15px] cursor-pointer flex flex-row justify-between p-[20px]'>
                         <div>
-                            <p className='font-roboto text-[14px] cursor-pointer'>Total Products</p>
-                            <h4 className='font-roboto font-bold text-[14px] cursor-pointer'>230</h4>
+                            <p className='font-roboto text-[14px] dark:text-white cursor-pointer'>Total Products</p>
+                            <h4 className='font-roboto font-bold dark:text-white text-[14px] cursor-pointer'>230</h4>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000" width="20" height="20">
@@ -75,8 +75,8 @@ const DashboardOverview = () => {
                     {/* card */}
                     <div className='border-solid border-[1px] rounded-[15px] cursor-pointer flex flex-row justify-between p-[20px]'>
                         <div>
-                            <p className='font-roboto text-[14px] cursor-pointer'>Total Products</p>
-                            <h4 className='font-roboto font-bold text-[14px] cursor-pointer'>230</h4>
+                            <p className='font-roboto text-[14px] dark:text-white cursor-pointer'>Total Products</p>
+                            <h4 className='font-roboto font-bold dark:text-white text-[14px] cursor-pointer'>230</h4>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000" width="20" height="20">
@@ -88,8 +88,8 @@ const DashboardOverview = () => {
                     {/* card */}
                     <div className='border-solid border-[1px] rounded-[15px] cursor-pointer flex flex-row justify-between p-[20px]'>
                         <div>
-                            <p className='font-roboto text-[14px] cursor-pointer'>Total Products</p>
-                            <h4 className='font-roboto font-bold text-[14px] cursor-pointer'>230</h4>
+                            <p className='font-roboto text-[14px] dark:text-white cursor-pointer'>Total Products</p>
+                            <h4 className='font-roboto font-bold dark:text-white text-[14px] cursor-pointer'>230</h4>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000" width="20" height="20">
@@ -108,8 +108,8 @@ const DashboardOverview = () => {
                             Add New Product
                         </Button>
                     </div>
-                    <div className='border-solid mt-[10px] p-[10px] rounded-[15px] border-[1px]'>
-                        <Table pagination={{ pageSize: 5 }}  dataSource={dataSource} columns={columns} />
+                    <div className='border-solid mt-[10px] p-[10px] dark:bg-primary rounded-[15px] border-[1px]'>
+                        <Table pagination={{ pageSize: 5 }}   dataSource={dataSource} columns={columns} />
                     </div>
                 </div>
             </div>
