@@ -4,6 +4,7 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 import { config } from 'dotenv'
 import UserRoute from './routes/UserRoute.js'
+import ProductRoute from './routes/ProductRoute.js'
 
 config()
 const app = express()
@@ -31,3 +32,4 @@ database.connect((error) => {
 })
 
 app.use('/api', UserRoute)
+app.use('/api', ProductRoute)

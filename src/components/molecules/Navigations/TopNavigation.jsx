@@ -49,7 +49,7 @@ const TopNavigation = () => {
                 </div>
                 <div>
                     <ul className='flex flex-row items-center space-x-[20px]'>
-                        <li className={currentPath.pathname === '/' ? `font-roboto text-[14px] font-bold dark:text-white cursor-pointer` : `font-roboto text-[14px] dark:text-white cursor-pointer`}><Link to='/'>Dashboard</Link></li>
+                        <li className={currentPath.pathname === '/dashboard' ? `font-roboto text-[14px] font-bold dark:text-white cursor-pointer` : `font-roboto text-[14px] dark:text-white cursor-pointer`}><Link to='/dashboard'>Dashboard</Link></li>
                         <li className={currentPath.pathname === '/products' ? `font-roboto text-[14px] font-bold dark:text-white cursor-pointer` : `font-roboto text-[14px] dark:text-white cursor-pointer`}><Link to='/products'>Products</Link></li>
                         <li className={currentPath.pathname === '/register' ? `font-roboto text-[14px] font-bold dark:text-white cursor-pointer` : `font-roboto text-[14px] dark:text-white cursor-pointer`}><Link to='/register'>Add New Manager</Link></li>
                         <li onClick={logout} className='font-roboto text-[14px] text-red-500 cursor-pointer'>Logout</li>

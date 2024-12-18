@@ -49,11 +49,16 @@ export const  checkValidToken = (req, res, next) => {
                 // generate token
                 const newToken = generateToken(userId)
 
-                return res.status(200).json({
-                    "status": 200,
-                    "message": 'Access token expired, new token issued.',
-                    "token": newToken,
-                });
+                // return res.status(200).json({
+                //     "status": 200,
+                //     "message": 'Access token expired, new token issued.',
+                //     "token": newToken,
+                // });
+
+                res.setHeader('token', newToken);
+                // console.log(`New token issued and sent: ${newToken}`); 
+                req.user = jwt.verify(newToken, secretKey);
+                return next();
 
             } catch (refreshError) {
                 return res.status(401).json({
