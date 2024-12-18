@@ -42,7 +42,7 @@ const LoginPage = () => {
 
                 login(response.user, response.token);
 
-                navigate('/')
+                navigate('/dashboard')
             }
         } catch(error) {
             console.log(error)
